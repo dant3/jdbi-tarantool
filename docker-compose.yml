@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  tarantool:
+    image: "tarantool/tarantool:latest"
+    ports:
+      - "3301:3301"
+    volumes:
+      - ./data/tarantool:/var/lib/tarantool
